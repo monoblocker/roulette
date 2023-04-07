@@ -1,0 +1,137 @@
+$rouletteHeight: 200px;
+
+.rouletteWrapper {
+  margin-top: 350px;
+  position: relative;
+}
+
+.history {
+  position: absolute;
+  top: 10px;
+}
+
+.evRoulette {
+  margin: 0 auto;
+  width: 1400px;
+  font-family: sans-serif;
+  height: $rouletteHeight;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAABICAIAAAAlAcO3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEEyRDdEMjlCN0YzMTFFNUFENkFDNjREMzkyMkNGRjciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEEyRDdEMjhCN0YzMTFFNUFENkFDNjREMzkyMkNGRjciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjZGMUQ4MTFCNkVDMTFFNUFEN0JFN0EzNUVFODI1MTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjZGMUQ4MTJCNkVDMTFFNUFEN0JFN0EzNUVFODI1MTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6qkPVZAAABp0lEQVR42uzZ0UrEMBhE4aTsQyx6Ifj+r7iJbVVswcKPTTfSfoNKOQuraIhzmHy/v6Wcch5yzuk7dUwpOL7k+eX1PYkEMvgVSDC31T1Ty/jwy/2D48t7ZXyh1jR/lOVpwvHt/0F14w7Cr81/zsp01UxfUx5WBwjHvwgPEh4krT2olIfOj0f4oPPjQT7o/HiQ6/x4mPMg4UHS2oN0ftwehNuD8E7cHoTbg4QHSTcPsgfhQW4PwqPcHoRHuc6PhzkPEh4krT1I58ftQbg9CO/E7UG4PUh4kHTzIHsQHuT2IDzK7UF4lOv8eJjzIOFB0tqDdH7cHoTbg/BO3B6E24OEB0k3D7IH4UFuD8Kj3B6ER7nOj4c5DxIeJK09SOfH7UG4PQjvxJ+xB42PnOIE/BkeNH67unlohQfJ+Tzo6D1o/pxe4BTJHoRfhNuD8CjX+S/mMnuc9GgP+vzheNA/yR4n5UES9iCd/zp8p5Pag3B7EN6a35ZdN40nKM8P6w6Mn4XXyTT++j486FoStOdvwYMk7EFH70GlPvJ8kXGTZA/CL8LtQXiUfwgwAAA7NztZHovQAAAAAElFTkSuQmCC') repeat left top;
+  box-shadow: inset 0 0 4px #1a1b22;
+  border: 1px solid #232730;
+  border-radius: 5px;
+}
+
+.evTarget {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 200px;
+  background: #a30041;
+  z-index: 1100;
+}
+
+.evWeapons {
+  height: $rouletteHeight;
+  white-space: nowrap;
+  position: relative;
+  left: 0;
+}
+
+.evWeapon {
+  display: inline-block;
+  width: 200px;
+  height: $rouletteHeight;
+}
+
+.evWeaponInner {
+  width: 190px;
+  height: $rouletteHeight;
+  position: relative;
+  background: #282c36;
+  margin-right: 10px;
+}
+
+.evWeaponRarity {
+  width: 5px;
+  height: $rouletteHeight;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.evWeaponRarity.evWeaponRarityMilspec {
+  background: #4b69ff;
+}
+
+.evWeaponRarity.evWeaponRarityRestricted {
+  background: #8847ff;
+}
+
+.evWeaponRarity.evWeaponRarityClassified {
+  background: #d32ce6;
+}
+
+.evWeaponRarity.evWeaponRarityCovert {
+  background: #eb4b4b;
+}
+
+.evWeaponRarity.evWeaponRarityRare {
+  background: #ffd700;
+}
+
+.evWeaponRarity.evWeaponRarityUncommon {
+  background: #ddd;
+}
+
+.evWeaponInner img {
+  width: 120px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 35px;
+}
+
+.evWeaponText {
+  position: absolute;
+  top: 90px;
+  left: 5px;
+  width: 185px;
+  height: 50px;
+  background: #242531;
+}
+
+.ev-weapon-text p {
+  height: 15px;
+  line-height: 15px;
+  color: #e4e4e4;
+  font-size: 12px;
+  margin: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ev-weapon-text p:first-child {
+  margin-top: 10px;
+}
+
+.button {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  padding: 5px 120px;
+  border: none;
+  background-color: #a7281a;
+  color: #fff;
+  margin: 30px auto 0;
+
+  &:disabled {
+    background-color: #541710;
+    color: rgba(#fff, 0.6);
+  }
+}
